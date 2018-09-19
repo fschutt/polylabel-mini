@@ -1,7 +1,7 @@
 [package]
 name = "polylabel-mini"
 version = "0.1.0"
-authors = ["Stephan Hügel <urschrei@gmail.com>", "Corey Farwell <coreyf@rwell.org>", ]
+authors = ["Stephan Hügel <urschrei@gmail.com>", "Corey Farwell <coreyf@rwell.org>"]
 description = "[Fork of polylabel-rs] A Rust implementation of the Polylabel algorithm for finding optimum polygon label positions."
 readme = "README.md"
 keywords = ["geo", "polylabel", "gis"]
