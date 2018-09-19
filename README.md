@@ -11,7 +11,8 @@ Yes, this is technically a copy-paste implementation, but for my purposes, I onl
 use the `polylabel()` function and nothing else. It simply doesn't make sense to
 import 18 extremely generics-heavy dependencies for 50 lines of code.
 
-This crate doesn't have any dependencies.
+This crate doesn't have any dependencies and has special optimizations applied, for example
+calculating the bounding rectangle doesn't require cloning the points.
 
 The following functions were copied from the `geo` crate:
 
@@ -28,4 +29,4 @@ As you can see, not anything that would justify 18 dependencies. The code was fo
 
 The license of both `geo` and `polylabel` is MIT, therefore this repository is also MIT
 licensed. I do not want to violate any licensing restrictions, I just want to reduce
-dependencies. All code is licensed under the MIT license from Stefan Hügel.
+dependencies. All code is licensed under the MIT license from Stefan Hügel and Corey Farwell.
