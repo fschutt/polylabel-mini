@@ -163,7 +163,7 @@ enum PointPosition {
 }
 
 impl Polygon {
-    fn contains(&self, p: &Point) -> bool {
+    pub fn contains(&self, p: &Point) -> bool {
         match get_position(*p, &self.exterior) {
             PointPosition::OnBoundary | PointPosition::Outside => false,
             _ => self
@@ -173,7 +173,7 @@ impl Polygon {
         }
     }
 
-    fn area(&self) -> f64 {
+    pub fn area(&self) -> f64 {
         let area_exterior = get_linestring_area(&self.exterior);
         let area_interior: f64 = self.interiors.iter().map(|line| get_linestring_area(line)).sum();
         area_exterior - area_interior
